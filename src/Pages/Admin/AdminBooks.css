@@ -1,0 +1,439 @@
+.admin-books-page {
+    min-height: calc(100vh - 80px);
+    background: #f7f7f7;
+    padding: 40px 20px;
+}
+
+.admin-books-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+.admin-books-header {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.admin-books-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #111;
+}
+
+.admin-books-header p {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+}
+
+/* ================= BUTTONS ================= */
+
+.admin-primary-btn {
+    background: #c45b7c;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-primary-btn:hover {
+    background: #b34f70;
+    transform: translateY(-1px);
+}
+
+.admin-primary-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.admin-secondary-btn {
+    background: white;
+    color: #c45b7c;
+    border: 1px solid #c45b7c;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-secondary-btn:hover {
+    background: #f9e7ed;
+}
+
+.admin-secondary-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ================= SEARCH ================= */
+
+.admin-books-search {
+    background: white;
+    padding: 18px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-books-search input {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+.admin-books-search input:focus {
+    border-color: #c45b7c;
+    box-shadow: 0 0 0 2px rgba(196, 91, 124, 0.1);
+}
+
+.admin-books-search span {
+    background: #c45b7c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ================= MESSAGE ================= */
+
+.admin-books-message {
+    background: #f9e7ed;
+    color: #a33f60;
+    border: 1px solid #e7b5c5;
+
+    padding: 13px 18px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ================= FORM ================= */
+
+.admin-book-form-card {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.admin-book-form-card h2 {
+    margin: 0 0 22px;
+    font-size: 24px;
+    color: #111;
+}
+
+.admin-book-form-card form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.admin-book-form-card form input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+.admin-book-form-card form input:focus {
+    border-color: #c45b7c;
+    box-shadow: 0 0 0 2px rgba(196, 91, 124, 0.1);
+}
+
+.admin-book-form-actions {
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+/* ================= BOOK GRID ================= */
+
+.admin-books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* ================= BOOK CARD ================= */
+
+.admin-book-card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    min-width: 0;
+}
+
+.admin-book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= BOOK ICON ================= */
+
+.admin-book-icon {
+    width: 65px;
+    height: 65px;
+
+    background: #f9e7ed;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+/* ================= BOOK TITLE ================= */
+
+.admin-book-card h2 {
+    margin: 0 0 8px;
+
+    font-size: 22px;
+    line-height: 1.3;
+    color: #111;
+
+    word-break: break-word;
+}
+
+.admin-book-author {
+    margin: 0 0 14px;
+
+    color: #777;
+    font-size: 15px;
+
+    word-break: break-word;
+}
+
+/* ================= CATEGORY ================= */
+
+.admin-book-category {
+    display: inline-block;
+
+    background: #f9e7ed;
+    color: #c45b7c;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+/* ================= PRICE + STOCK ================= */
+
+.admin-book-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    padding: 16px 0;
+    margin-bottom: 18px;
+
+    gap: 20px;
+}
+
+.admin-book-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    min-width: 0;
+}
+
+.admin-book-info > div:first-child {
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.admin-book-info span {
+    color: #888;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.admin-book-info strong {
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+
+    word-break: break-word;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.admin-book-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.admin-book-actions button {
+    width: 100%;
+    min-height: 42px;
+}
+
+.admin-book-actions .admin-secondary-btn {
+    color: #c45b7c;
+}
+
+.admin-book-actions .admin-primary-btn {
+    background: #c45b7c;
+}
+
+/* ================= NO BOOKS ================= */
+
+.admin-no-books {
+    background: white;
+
+    padding: 60px 20px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.admin-no-books-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.admin-no-books h2 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    color: #111;
+}
+
+.admin-no-books p {
+    color: #777;
+    margin: 0;
+}
+
+/* ================= LOADING ================= */
+
+.admin-books-page .admin-books-header h1 {
+    line-height: 1.2;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+    .admin-books-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+    .admin-books-page {
+        padding: 25px 12px;
+    }
+
+    .admin-books-header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 22px;
+    }
+
+    .admin-books-header h1 {
+        font-size: 27px;
+    }
+
+    .admin-primary-btn {
+        width: 100%;
+    }
+
+    .admin-books-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-books-search span {
+        text-align: center;
+    }
+
+    .admin-books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-book-form-card form {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-form-actions {
+        grid-column: auto;
+        flex-direction: column;
+    }
+
+    .admin-form-actions button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .admin-book-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-book-info {
+        gap: 12px;
+    }
+
+    .admin-book-info > div:first-child {
+        padding-right: 12px;
+    }
+}
