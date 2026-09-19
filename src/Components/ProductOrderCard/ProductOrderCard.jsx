@@ -109,7 +109,7 @@ function ProductOrderCard({ productDetails }) {
         try {
 
             const response = await axios.patch(
-                `http://localhost:5000/api/orders/${_id}`,
+                `https://bookstore-backend-gz0l.onrender.com/api/orders/${_id}`,
                 {
                     orderId
                 },

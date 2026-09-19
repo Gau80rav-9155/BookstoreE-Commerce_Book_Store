@@ -89,7 +89,7 @@ function Orders() {
                 try {
 
                     const ordersResponse = await axios.get(
-                        "http://localhost:5000/api/user/orders",
+                        "https://bookstore-backend-gz0l.onrender.com/api/user/orders",
                         {
                             headers: {
                                 "x-access-token": token
@@ -122,7 +122,7 @@ function Orders() {
                 try {
 
                     const userResponse = await axios.get(
-                        "http://localhost:5000/api/user",
+                        "https://bookstore-backend-gz0l.onrender.com/api/user",
                         {
                             headers: {
                                 "x-access-token": token

@@ -25,7 +25,7 @@ function AdminUsers() {
         }
 
         axios.get(
-            "http://localhost:5000/api/admin/users",
+            "https://bookstore-backend-gz0l.onrender.com/api/admin/users",
             {
                 headers: {
                     "x-access-token": token

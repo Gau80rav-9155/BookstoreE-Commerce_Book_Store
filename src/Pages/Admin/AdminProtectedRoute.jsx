@@ -15,7 +15,7 @@ function AdminProtectedRoute() {
         }
 
         axios.get(
-            "http://localhost:5000/api/admin/verify",
+            "https://bookstore-backend-gz0l.onrender.com/api/admin/verify",
             {
                 headers: {
                     "x-access-token": token

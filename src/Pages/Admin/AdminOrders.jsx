@@ -33,7 +33,7 @@ function AdminOrders() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/admin/orders",
+                "https://bookstore-backend-gz0l.onrender.com/api/admin/orders",
                 {
                     headers: {
                         "x-access-token": token
@@ -99,7 +99,7 @@ function AdminOrders() {
         try {
 
             const response = await axios.patch(
-                `http://localhost:5000/api/admin/orders/${orderId}/status`,
+                `https://bookstore-backend-gz0l.onrender.com/api/admin/orders/${orderId}/status`,
                 {
                     status: newStatus
                 },

@@ -22,7 +22,7 @@ function Signup() {
         event.preventDefault()
 
         axios.post(
-            "http://localhost:5000/api/signup",
+            "https://bookstore-backend-gz0l.onrender.com/api/signup",
             {
                 newUserName: newUserName.trim(),
                 newUserEmail: newUserEmail.trim(),

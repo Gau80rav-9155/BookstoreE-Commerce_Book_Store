@@ -27,7 +27,7 @@ function SalesAnalytics() {
         }
 
         axios.get(
-            "http://localhost:5000/api/admin/analytics",
+            "https://bookstore-backend-gz0l.onrender.com/api/admin/analytics",
             {
                 headers: {
                     "x-access-token": token

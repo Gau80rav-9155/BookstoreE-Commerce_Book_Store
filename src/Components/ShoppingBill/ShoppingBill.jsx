@@ -105,7 +105,7 @@ function ShoppingBill() {
                 const response =
                     await axios.post(
 
-                        "http://localhost:5000/api/orders",
+                        "https://bookstore-backend-gz0l.onrender.com/api/orders",
 
                         {
 
@@ -189,7 +189,7 @@ function ShoppingBill() {
 
                 await axios.patch(
 
-                    "http://localhost:5000/api/cart/empty/all",
+                    "https://bookstore-backend-gz0l.onrender.com/api/cart/empty/all",
 
                     {},
 

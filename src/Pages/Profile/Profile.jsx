@@ -49,7 +49,7 @@ function Profile() {
             setUserLoggedIn(true)
 
             axios.get(
-                "http://localhost:5000/api/user",
+                "https://bookstore-backend-gz0l.onrender.com/api/user",
                 {
                     headers: {
                         "x-access-token": token

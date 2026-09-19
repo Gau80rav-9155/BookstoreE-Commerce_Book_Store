@@ -130,7 +130,7 @@ function HorizontalProductCard({ productDetails }) {
             const response =
                 await axios.patch(
 
-                    "http://localhost:5000/api/cart/quantity",
+                    "https://bookstore-backend-gz0l.onrender.com/api/cart/quantity",
 
                     {
                         productId:
@@ -222,7 +222,7 @@ function HorizontalProductCard({ productDetails }) {
             const response =
                 await axios.patch(
 
-                    "http://localhost:5000/api/cart/remove",
+                    "https://bookstore-backend-gz0l.onrender.com/api/cart/remove",
 
                     {
                         productId:
@@ -313,7 +313,7 @@ function HorizontalProductCard({ productDetails }) {
             const response =
                 await axios.patch(
 
-                    "http://localhost:5000/api/wishlist",
+                    "https://bookstore-backend-gz0l.onrender.com/api/wishlist",
 
                     {
                         productdetails:

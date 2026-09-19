@@ -38,7 +38,7 @@ function AdminBooks() {
         setLoading(true)
 
         axios.get(
-            "http://localhost:5000/api/admin/books",
+            "https://bookstore-backend-gz0l.onrender.com/api/admin/books",
             {
                 headers: {
                     "x-access-token": adminToken
@@ -164,7 +164,7 @@ function AdminBooks() {
 
         if (editingBook) {
             axios.patch(
-                `http://localhost:5000/api/admin/books/${editingBook._id}`,
+                `https://bookstore-backend-gz0l.onrender.com/api/admin/books/${editingBook._id}`,
                 bookData,
                 {
                     headers: {
@@ -202,7 +202,7 @@ function AdminBooks() {
         }
         else {
             axios.post(
-                "http://localhost:5000/api/admin/books",
+                "https://bookstore-backend-gz0l.onrender.com/api/admin/books",
                 bookData,
                 {
                     headers: {
@@ -257,7 +257,7 @@ function AdminBooks() {
         }
 
         axios.delete(
-            `http://localhost:5000/api/admin/books/${id}`,
+            `https://bookstore-backend-gz0l.onrender.com/api/admin/books/${id}`,
             {
                 headers: {
                     "x-access-token": adminToken

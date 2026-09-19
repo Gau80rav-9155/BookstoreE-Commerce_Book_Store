@@ -18,7 +18,7 @@ function AdminLogin() {
         setMessage("")
 
         axios.post(
-            "http://localhost:5000/api/admin/login",
+            "https://bookstore-backend-gz0l.onrender.com/api/admin/login",
             {
                 email,
                 password

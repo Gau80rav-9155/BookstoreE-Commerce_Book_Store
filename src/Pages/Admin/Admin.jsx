@@ -29,7 +29,7 @@ function Admin() {
         }
 
         axios.get(
-            "http://localhost:5000/api/admin/stats",
+            "https://bookstore-backend-gz0l.onrender.com/api/admin/stats",
             {
                 headers: {
                     "x-access-token": token

@@ -63,7 +63,7 @@ function WishlistProductCard({ productdetails }) {
             setRemoving(true)
 
             const response = await axios.patch(
-                "http://localhost:5000/api/wishlist/remove",
+                "https://bookstore-backend-gz0l.onrender.com/api/wishlist/remove",
                 {
                     productId: String(_id),
                     bookName: bookName
@@ -171,7 +171,7 @@ function WishlistProductCard({ productdetails }) {
             setAddingToCart(true)
 
             const response = await axios.patch(
-                "http://localhost:5000/api/cart",
+                "https://bookstore-backend-gz0l.onrender.com/api/cart",
                 {
                     productdetails
                 },

@@ -15,7 +15,7 @@ function Reviews({ productId }) {
         if (!productId) return
 
         axios.get(
-            `http://localhost:5000/api/reviews/${productId}`
+            `https://bookstore-backend-gz0l.onrender.com/api/reviews/${productId}`
         )
         .then(response => {
             if (response.data.status === "ok") {
@@ -61,7 +61,7 @@ function Reviews({ productId }) {
             setMessage("")
 
             axios.post(
-                "http://localhost:5000/api/reviews",
+                "https://bookstore-backend-gz0l.onrender.com/api/reviews",
                 {
                     productId,
                     userId,

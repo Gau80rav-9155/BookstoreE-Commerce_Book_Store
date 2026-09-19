@@ -56,7 +56,7 @@ function ProductPage() {
                 try {
 
                     const response = await axios.get(
-                        "http://localhost:5000/api/user",
+                        "https://bookstore-backend-gz0l.onrender.com/api/user",
                         {
                             headers: {
                                 "x-access-token": token
@@ -119,7 +119,7 @@ function ProductPage() {
             }
 
             const response = await axios.patch(
-                "http://localhost:5000/api/wishlist",
+                "https://bookstore-backend-gz0l.onrender.com/api/wishlist",
                 {
                     productdetails
                 },
@@ -184,7 +184,7 @@ function ProductPage() {
             }
 
             const response = await axios.patch(
-                "http://localhost:5000/api/cart",
+                "https://bookstore-backend-gz0l.onrender.com/api/cart",
                 {
                     productdetails
                 },
